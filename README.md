@@ -1,114 +1,32 @@
-# The Hacker-Blog theme
+# About
 
-*Hacker-Blog is a minimalistic, responsive jekyll theme built for hackers. It is based on the [hacker theme](https://github.com/pages-themes/hacker) for project pages.*
+This is my blog based on jekyll. And I change the style and interactive. If you want to use this model of the blog. **Please give a star at this repository**. Then you can clone it as your blog model.
 
-Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker-blog)
+You can visit [here](http://gaohaoyang.github.io) to see this blog.
 
-### Included
+---
 
-1. Pagination
-2. SEO tags
-3. Archive Page
-4. About Page
-5. RSS (`https://base-url/atom`)
-6. Sitemap (`https://base-url/sitemap`)
-7. Google Analytics (optional)
+这是我的博客，基于 jekyll。我改了所有默认的样式和交互。如果你想使用这个博客模板。**请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。然后你可以克隆这个仓库用作你自己的博客。
 
-## Usage
+博客访问地址：[点击这里](http://gaohaoyang.github.io)
 
-1. Fork and Clone this repository
-2. Customize your blog
-3. Add a new post in `_posts/` directory with proper name format (as shown in placeholder posts)
-4. Commit and push to master on a repository named `<githubusername.github.io>`.
-5. Visit `<githubusername>.github.io`
+**使用时请注明模板来源:  Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
 
-## Local Build
+<!--
 
-If you want to see the changes before pushing the blog to Github, do a local build.
+## 被引用信息
 
-1. [`gem install jekyll`](https://jekyllrb.com/docs/installation/#install-with-rubygems)
-2. `gem install jekyll-seo-tag`
-3. `gem install jekyll-paginate`
-4. `gem install jekyll-sitemap`
-5. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
-6. Go to `http://0.0.0.0:8000/` in your web browser.
+使用了我的模板并写明来源的人：   
 
-*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+* [dreamholy](http://dreamholy.github.io/)
 
-### Local build using docker
+没有注明来源的人：
 
-```bash
-docker run --rm -p 8000:8000 \
-  --volume="LOCATION_OF_YOUR_JEKYLL_BLOG:/srv/jekyll" \
-  -it tocttou/jekyll:3.5 \
-  jekyll serve --watch --port 8000
-```
+* [yangshuailing](http://yangshuailing.github.io/com/)
+* [huapu728](http://huapu728.github.io/)
+* [greatbuger](http://greatbuger.github.io/) 
 
-Replace `LOCATION_OF_YOUR_JEKYLL_BLOG` with the full path of your blog repository. Visit `http://localhost:8000/` to access the blog.
 
-*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+-->
 
-## Customizing
 
-### Configuration variables
-
-Edit the `_config.yml` file and set the following variables:
-
-```yml
-title: [The title of your blog]
-description: [A short description of your blog's purpose]
-author:
-  name: [Your name]
-  email: [Your email address]
-  url: [URL of your website]
-
-baseurl: [The base url for this blog.]
-
-paginate: [Number of posts in one paginated section (default: 3)]
-owner: [Your name]
-year: [Current Year]
-```
-
-*Note: All links in the site are prepended with `baseurl`. Default `baseurl` is `/`. Any other baseurl can be setup like `baseurl: /hacker-blog`, which makes the site available at `http://domain.name/hacker-blog`.*
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-### About Page
-
-Edit `about.md`
-
-### Layout
-
-If you would like to modify the site style:
-
-**HTML**
-
-Footer: Edit `_includes/footer.html`
-
-Header: Edit `_includes/header.html`
-
-Links in the header: Edit `_includes/links.html`
-
-Meta tags, blog title display, and additional CSS: Edit `_includes/head.html`
-
-Index page layout: Edit `_layouts/default.html`
-
-Post layout: Edit `_layouts/post.html`
-
-**CSS**
-
-Site wide CSS: Edit `_sass/base.scss`
-
-Custom CSS: Make `_sass/custom.scss` and use it. Then add `@import "custom";` to `css/main.scss`
-
-**404 page**
-
-Edit `404.md`
-
-## License
-
-CC0 1.0 Universal
